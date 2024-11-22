@@ -5,6 +5,7 @@ import UserForm from './UserForm'
 import UserList from './UserList'
 import UserDetails from './UserDetails'
 import UserEdit from './UserEdit'
+import UserDelete from './UserDelete'
 import { UserProvider } from './context/UserContext'
 
 const App = () => {
@@ -61,7 +62,7 @@ const App = () => {
             <Route path='/users/:id' element={<UserDetails />} />
             <Route path='/create' element={<UserForm addUser={addUser} />} />
             <Route path='/edit/:id' element={<UserEdit />} />
-            {/* <Route path="/delete/:id" element={<UserDelete />} /> */}
+            <Route path="/delete/:id" element={<UserDelete />} />
           </Routes>
         </Router>
       </UserProvider>

@@ -1,5 +1,7 @@
 import React from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+
+
 const UserDelete = () => {
   const { id } = useParams()
   const navigate = useNavigate()
